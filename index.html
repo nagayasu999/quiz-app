@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一般常識クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1 class="app__title">一般常識クイズ</h1>
+      <p class="app__subtitle">全5問・4択形式</p>
+    </header>
+
+    <main class="app__main">
+
+      <!-- スタート画面 -->
+      <section class="screen screen--active" id="start-screen">
+        <p class="start__lead">
+          地理・理科・歴史・ことわざ・単位から全5問。<br>
+          あなたは何問正解できる？
+        </p>
+        <button class="btn btn--primary" id="start-btn" type="button">スタート</button>
+      </section>
+
+      <!-- クイズ画面 -->
+      <section class="screen" id="quiz-screen">
+        <div class="quiz__meta">
+          <span class="quiz__progress-text" id="progress-text"></span>
+          <span class="quiz__category" id="category"></span>
+        </div>
+
+        <div class="quiz__progress-bar">
+          <div class="quiz__progress-fill" id="progress-fill"></div>
+        </div>
+
+        <h2 class="quiz__question" id="question-text"></h2>
+
+        <ul class="choices" id="choices"></ul>
+
+        <div class="feedback" id="feedback" role="status" aria-live="polite" hidden>
+          <p class="feedback__judge" id="feedback-judge"></p>
+          <p class="feedback__explanation" id="feedback-explanation"></p>
+        </div>
+
+        <button class="btn btn--primary" id="next-btn" type="button" hidden>次の問題へ</button>
+      </section>
+
+      <!-- 結果画面 -->
+      <section class="screen" id="result-screen">
+        <h2 class="result__heading">結果発表</h2>
+
+        <p class="result__score">
+          <span class="result__score-total">5問中</span>
+          <span class="result__score-number" id="result-score">0</span>
+          <span class="result__score-total">問正解</span>
+        </p>
+
+        <p class="result__message" id="result-message"></p>
+
+        <h3 class="review__heading">解答の振り返り</h3>
+        <ul class="review" id="review"></ul>
+
+        <button class="btn btn--primary" id="retry-btn" type="button">もう一度挑戦する</button>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
