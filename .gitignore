@@ -1,3 +1,11 @@
+# 依存パッケージ
+node_modules/
+
+# 環境変数（機密情報を含むためコミットしない）
+.env
+.env.*
+!.env.example
+
 # macOS
 .DS_Store
 

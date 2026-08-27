@@ -9,6 +9,13 @@
 - **技術スタック**: HTML / CSS / JavaScript（バニラ、フレームワーク・ビルドツールなし）
 - **実行環境**: モダンブラウザ（Chrome / Safari / Firefox の最新版）
 
+## GitHubリポジトリ
+
+https://github.com/nagayasu999/quiz-app
+
+- リモート `origin` は **SSH** で設定済み（`git@github.com:nagayasu999/quiz-app.git`）。HTTPS では認証情報が未保存のため使わない。
+- 更新は `git add` → `git commit` → `git push` で反映する。
+
 ## ファイル構成
 
 ```
